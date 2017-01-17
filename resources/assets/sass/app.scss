@@ -1,0 +1,295 @@
+/* Common Styes
+-------------------------------------------------- */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn .glyphicon {
+  padding-right: 5px;
+
+  top: 2px;
+}
+
+.btn.expand {
+  width: 100%;
+}
+
+.panel-actions {
+  padding: 15px 15px 0 15px;
+  margin-bottom: 15px;
+
+  form, .btn {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.panel-body {
+  padding-top: 0;
+  margin-top: 15px;
+
+  h4 {
+    margin-top: 30px;
+  }
+}
+
+// Common table for listing data
+.common-table {
+  tr td {
+    padding: 15px 5px;
+  }
+
+  tbody tr {
+    td {
+      cursor: pointer;
+
+      border-top: 1px solid #666;
+
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      -ms-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+    }
+
+    &:hover td {
+      background-color: #CCC;
+    }
+
+    &:last-child td {
+      border-bottom: 1px solid #666;
+    }
+  }
+
+  thead tr th,
+  tfoot tr th {
+    padding: 8px 5px;
+  }
+}
+
+// Comission colors
+.common-table tbody tr.comission-not-paid {
+  background-color: #FF7B69;
+
+  &:hover td {
+    background-color: lighten(#FF7B69, 10%);
+  }
+}
+
+.common-table tbody tr.comission-paid {
+  background-color: #1DE3C3;
+
+  &:hover td {
+    background-color: lighten(#1DE3C3, 10%);
+  }
+}
+
+// Vertical align
+.vert-pos-container {
+  position: relative;
+}
+
+.vert-pos {
+  position: absolute;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 0 15px 60px;
+
+  position: relative;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.container.supplier-company {
+  .form-group.address-main-data {
+    display: none;
+  }
+}
+
+.form-group .form-checkbox {
+  margin-top: 30px;
+
+  input[type='checkbox'] {
+    margin-top: 0;
+    margin-right: 10px;
+
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.code {
+  font-size: 80%;
+}
+
+.messages {
+  margin: 40px 0;
+}
+
+// Override vex to make like bootstrap
+.vex.vex-theme-plain .vex-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.vex.vex-theme-plain .vex-dialog-form .vex-dialog-message {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-primary,
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-secondary {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  color: #333;
+  background-color: #fff;
+
+  font-family: "Lato", sans-serif;
+
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-primary:hover,
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-secondary:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+// Uploader styles
+#document-actions {
+  margin-bottom: 30px;
+
+  /* The total progress gets shown by event listeners */
+  #total-progress {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+
+  .btn.start,
+  .btn.cancel {
+    display: none;
+  }
+}
+
+#document-previews {
+  /* Hide the progress bar when finished */
+  .file-row.dz-success .progress {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+
+  .file-row {
+    margin-bottom: 15px;
+
+    .btns-container {
+      .btn {
+        margin-bottom: 5px;
+      }
+
+      .delete,
+      .download {
+        display: none;
+      }
+    }
+
+    &.dz-success {
+      .btns-container {
+        .start,
+        .cancel {
+          display: none;
+        }
+
+        .delete,
+        .download {
+          display: inline-block;
+        }
+      }
+    }
+
+    .name {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+#document-actions,
+#document-previews {
+  .progress {
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

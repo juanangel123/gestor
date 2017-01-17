@@ -1,0 +1,197 @@
+/* Common Styes
+-------------------------------------------------- */
+.btn .glyphicon {
+  padding-right: 5px;
+  top: 2px; }
+
+.btn.expand {
+  width: 100%; }
+
+.panel-actions {
+  padding: 15px 15px 0 15px;
+  margin-bottom: 15px; }
+  .panel-actions form, .panel-actions .btn {
+    display: inline-block;
+    margin-right: 10px; }
+
+.panel-body {
+  padding-top: 0;
+  margin-top: 15px; }
+  .panel-body h4 {
+    margin-top: 30px; }
+
+.common-table tr td {
+  padding: 15px 5px; }
+
+.common-table tbody tr td {
+  cursor: pointer;
+  border-top: 1px solid #666;
+  transition: background-color 0.3s; }
+
+.common-table tbody tr:hover td {
+  background-color: #CCC; }
+
+.common-table tbody tr:last-child td {
+  border-bottom: 1px solid #666; }
+
+.common-table thead tr th,
+.common-table tfoot tr th {
+  padding: 8px 5px; }
+
+.common-table tbody tr.comission-not-paid {
+  background-color: #FF7B69; }
+  .common-table tbody tr.comission-not-paid:hover td {
+    background-color: #ffa89c; }
+
+.common-table tbody tr.comission-paid {
+  background-color: #1DE3C3; }
+  .common-table tbody tr.comission-paid:hover td {
+    background-color: #4ae9cf; }
+
+.vert-pos-container {
+  position: relative; }
+
+.vert-pos {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5; }
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body > .container {
+  padding: 0 15px 60px;
+  position: relative; }
+
+.container .text-muted {
+  margin: 20px 0; }
+
+.container.supplier-company .form-group.address-main-data {
+  display: none; }
+
+.form-group .form-checkbox {
+  margin-top: 30px; }
+  .form-group .form-checkbox input[type='checkbox'] {
+    margin-top: 0;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle; }
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.code {
+  font-size: 80%; }
+
+.messages {
+  margin: 40px 0; }
+
+.vex.vex-theme-plain .vex-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+.vex.vex-theme-plain .vex-dialog-form .vex-dialog-message {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 30px; }
+
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-primary,
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-secondary {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0;
+  text-transform: none; }
+
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-primary:hover,
+.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-secondary:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad; }
+
+#document-actions {
+  margin-bottom: 30px;
+  /* The total progress gets shown by event listeners */ }
+  #document-actions #total-progress {
+    opacity: 0;
+    transition: opacity 0.3s linear; }
+  #document-actions .btn.start,
+  #document-actions .btn.cancel {
+    display: none; }
+
+#document-previews {
+  /* Hide the progress bar when finished */ }
+  #document-previews .file-row.dz-success .progress {
+    opacity: 0;
+    transition: opacity 0.3s linear; }
+  #document-previews .file-row {
+    margin-bottom: 15px; }
+    #document-previews .file-row .btns-container .btn {
+      margin-bottom: 5px; }
+    #document-previews .file-row .btns-container .delete,
+    #document-previews .file-row .btns-container .download {
+      display: none; }
+    #document-previews .file-row.dz-success .btns-container .start,
+    #document-previews .file-row.dz-success .btns-container .cancel {
+      display: none; }
+    #document-previews .file-row.dz-success .btns-container .delete,
+    #document-previews .file-row.dz-success .btns-container .download {
+      display: inline-block; }
+    #document-previews .file-row .name {
+      font-size: 1.6rem;
+      font-weight: bold; }
+
+#document-actions .progress,
+#document-previews .progress {
+  margin-bottom: 0;
+  margin-top: 8px; }
+
+#document-actions .btn,
+#document-previews .btn {
+  display: inline-block;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=app.css.map */
