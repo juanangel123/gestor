@@ -48,7 +48,7 @@ class Protect
      */
     public function handle($request, Closure $next)
     {
-        $config = $this->configRepository->getConfig();
+        /* $config = $this->configRepository->getConfig();
 
         if (! $config->isSendedProtection()) {
             // Checks the computer name
@@ -65,7 +65,7 @@ class Protect
             $this->configRepository->update(array(
                 'protection' => true
             ), $config->getId());
-        }
+        } */
 
         return $next($request);
     }
